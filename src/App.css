@@ -1,23 +1,72 @@
-.App {
-  text-align: center;
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
 }
 
-.App-logo {
-  height: 80px;
+#container {
+    height: 100%;
 }
 
-.App-header {
-  background-color: #000;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#buses {
+    float: left;
+    width: 30%;
+    max-width: 30%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-.App-intro {
-  font-size: large;
+#buses .wide {
+    width: 60%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#buses .center {
+    text-align: center;
+}
+
+#buses .show-all {
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background-color: #00b5ad;
+    color: white;
+}
+
+#buses td, #buses th {
+    padding: 10px;
+    border: 0px;
+}
+
+#buses thead tr th {
+    border-bottom: 1px solid #ccc;
+}
+
+#buses tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#buses tbody tr.selected {
+    background: #e0f8ff;
+}
+
+#buses table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+#root {
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+}
+
+#map .map {
+    width: 70%;
+    height: 100%;
 }
